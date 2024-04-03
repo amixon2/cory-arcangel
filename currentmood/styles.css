@@ -1,0 +1,6 @@
+body{
+    background-color: red;
+    background-image: url(../images/background-1.png);
+    background-size: cover;
+    font-size: 30px;
+}
