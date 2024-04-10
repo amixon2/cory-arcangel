@@ -6,18 +6,3 @@ body{
     border: 40px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-
-.rotate-img img{
-    animation: rotate 5s linear infinite;
-    height: 70%;
-    width: 50%;
-}
-
-@keyframes rotate{
-    from {
-        transform: rotateY(0deg)
-    }
-    to {
-        transform: rotateY(360deg)
-    }
-}

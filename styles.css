@@ -1,7 +1,8 @@
-body{
+body {
     background-color: red;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-.main-container{
+.main-container {
     position: absolute;
     top: 0;
     left: 0;
@@ -10,17 +11,81 @@ body{
     height: 100%;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
+    z-index: 1;
 
 }
-.container{
+.container {
     background-image: url(images/background-1.png);
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 113px;
     min-height: 400px;
     max-width: 900px;
-}
-
-.top{
     z-index: 1;
 }
+
+.top {
+    z-index: 1;
+}
+
+.h1 {
+    position: relative;
+    z-index: 3;
+}
+
+#current-mood {
+    position: relative;
+    top: 250px;
+    left: 250px;
+    font-size: xx-large;
+}
+
+#about {
+    position: relative;
+    top: 250px;
+    left: 250px;
+    font-size: xx-large;
+}
+
+#famous {
+    position: relative;
+    top: 250px;
+    left: 250px;
+    font-size: xx-large;
+}
+
+#majerus {
+    position: relative;
+    top: 250px;
+    left: 250px;
+    font-size: xx-large;
+}
+
+#cory {
+    position: absolute;
+    left: 490px;
+    top: 0px;
+    font-size: 50px;
+}
+
+/* Media query for screens smaller than 600px */
+@media screen and (max-width: 600px) {
+    body {
+      font-size: 14px;
+    }
+  
+    .container {
+      padding: 10px;
+    }
+  }
+  
+  /* Media query for screens between 600px and 1200px */
+  @media screen and (min-width: 600px) and (max-width: 1200px) {
+    body {
+      font-size: 16px;
+    }
+  
+    .container {
+      max-width: 600px;
+    }
+  }
